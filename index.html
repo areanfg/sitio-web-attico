@@ -3,98 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        
-        section {
-            background: #f4f4f4;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        
-        section h2 {
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        
-        a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>ATTICO — Consultoría Estratégica Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>¡Bienvenido!</h1>
-        <p>Mi primera página web con GitHub Pages</p>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">ATTICO</div>
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
-    
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Esta es mi página web personal publicada con GitHub Pages. Aquí puedo compartir mis proyectos, ideas y mucho más.</p>
-        </section>
-        
-        <section>
-            <h2>Mis proyectos</h2>
-            <p>Pronto compartiré mis proyectos aquí. ¡Mantente atento!</p>
-        </section>
-        
-        <section>
-            <h2>Contacto</h2>
-            <p>Puedes encontrarme en <a href="https://github.com/areanfg" target="_blank">GitHub</a></p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ATTICO</h1>
+            <p class="hero-claim">Estrategia digital para entornos complejos</p>
+            <p class="hero-subtitle">Consultoría independiente en transformación digital y sector público europeo</p>
+        </div>
+    </section>
+
+    <!-- SOBRE ATTICO -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Attico</h2>
+            <p class="about-text">
+                Attico es una firma de consultoría estratégica especializada en transformación digital, movilidad y sistemas públicos. Trabajamos con empresas tecnológicas, integradores y administraciones en proyectos europeos de alto impacto.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Qué hacemos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Estrategia B2G</h3>
+                    <p>Posicionamiento y entrada en el mercado público. Definimos estrategias de go-to-market para tecnología en administraciones.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Go-to-market Sector Público</h3>
+                    <p>Navegación de procesos de compra pública. Acompañamiento en licitaciones y marcos europeos de financiación.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Advisory Tecnológico</h3>
+                    <p>Evaluación de tecnologías, arquitecturas y ecosistemas. Análisis de viabilidad y recomendaciones estratégicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENFOQUE -->
+    <section class="approach">
+        <div class="container">
+            <h2 class="section-title">Nuestro enfoque</h2>
+            <ul class="approach-list">
+                <li><strong>Independencia.</strong> Sin conflictos de interés ni agendas predefinidas.</li>
+                <li><strong>Conocimiento técnico profundo.</strong> Consultores con experiencia en tecnología y sector público.</li>
+                <li><strong>Visión europea.</strong> Conocimiento de marcos, regulaciones y actores clave en Europa.</li>
+                <li><strong>Orientación práctica.</strong> Recomendaciones ejecutables y resultados medibles.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CON QUIÉN TRABAJAMOS -->
+    <section class="clients">
+        <div class="container">
+            <h2 class="section-title">Con quién trabajamos</h2>
+            <div class="clients-list">
+                <div class="client-item">Empresas tecnológicas</div>
+                <div class="client-item">Integradores de sistemas</div>
+                <div class="client-item">Administraciones públicas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <p>
+                    <a href="mailto:hello@attico.eu" class="contact-link">hello@attico.eu</a>
+                </p>
+                <p>
+                    <a href="https://linkedin.com/company/attico" target="_blank" class="contact-link">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ATTICO — Consultoría estratégica</p>
+        </div>
     </footer>
 </body>
 </html>
